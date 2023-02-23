@@ -1,5 +1,6 @@
 {
   "name": "todo",
+  "homepage": "https://yxnzhe.github.io/todo/",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
@@ -38,6 +39,5 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
-  },
-  "homepage": "https://yxnzhe.github.io/todo/"
+  }
 }
