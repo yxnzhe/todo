@@ -17,6 +17,16 @@ label {
   font: inherit;
 }
 
+.todo-footer {
+  position:absolute;
+  left:0;
+  bottom:0;
+  right:0;
+  background-color: #fff;
+  padding: 15px;
+  text-align: right;
+}
+
 :root {
   --_hue: 245;
   --_size: 1.8rem;
@@ -221,19 +231,6 @@ hr {
 
 .input::placeholder {
   opacity: 0;
-}
-
-.datetimeContainer {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-}
-
-.date {
-  text-align: left;
-}
-
-.time {
-  text-align: right;
 }
 
 [role="dialog"] {
