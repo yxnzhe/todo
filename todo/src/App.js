@@ -3,9 +3,11 @@ import { useState } from 'react'
 import TodoForm from './components/TodoForm';
 import TaskList from './components/TaskList';
 import EditForm from './components/EditForm';
+import useLocalStorage from './hooks/useLocalStorage';
+import DateTime from './components/DateTime';
 
 function App() {
-  const [tasks, setTasks] = useState([]);
+  const [tasks, setTasks] = useLocalStorage('tasks', []);
   const [editedTask, setEditedTask] = useState(null);
   const [isEditing, setIsEditing] = useState(false);
   const [previousFocus, setPreviousFocus] = useState(null);
@@ -52,6 +54,7 @@ function App() {
           />
         )
       }
+      <DateTime />
       <TodoForm addTask={addTask}/>
       {tasks && (
       <TaskList 

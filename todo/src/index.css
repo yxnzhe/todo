@@ -223,6 +223,19 @@ hr {
   opacity: 0;
 }
 
+.datetimeContainer {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+.date {
+  text-align: left;
+}
+
+.time {
+  text-align: right;
+}
+
 [role="dialog"] {
   position: fixed;
   z-index: 100;
