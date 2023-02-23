@@ -4,7 +4,6 @@ import TodoForm from './components/TodoForm';
 import TaskList from './components/TaskList';
 import EditForm from './components/EditForm';
 import useLocalStorage from './hooks/useLocalStorage';
-import DateTime from './components/DateTime';
 
 function App() {
   const [tasks, setTasks] = useLocalStorage('tasks', []);
@@ -54,7 +53,6 @@ function App() {
           />
         )
       }
-      <DateTime />
       <TodoForm addTask={addTask}/>
       {tasks && (
       <TaskList 
@@ -63,6 +61,9 @@ function App() {
         toggleComplete={toggleComplete}
         enterEditMode={enterEditMode}
       />)}
+      <div className='todo-footer'>
+          <p>Powered by <a href="https://github.com/yxnzhe/">Philly</a> © 2023</p>
+      </div>
     </div>
   );
 }
